@@ -1,0 +1,17 @@
+<h2>Пользователи</h2>
+
+<div class="form-group">
+  <div class="row">
+    <div class="col-md-4">
+      <select class="form-control" ng-model="form.viewType" ng-change="viewTypeChange()" ng-options='option.value as option.name for option in typeOptions'>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <ng-include src="listTemplate">
+  </ng-include>
+  <button class="btn btn-primary" ng-click="loadNextPage()">Подгрузить</button>
+</div>

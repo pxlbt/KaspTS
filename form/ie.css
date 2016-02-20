@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.container {
+  width: 100%;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.form {
+
+}
+
+.form__submit {
+  float: right;
+  margin-left: 15px;
+}
+
+.input-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.form-wrap {
+  width: 100%;
+}
+
+.form__input input[type=text]{
+  height: 30px;
+  border-width: 0;
+  width: 100%;
+  display: block;
+}
+
+.input-wrap {
+  border: 1px solid grey;
+}
+
+.form__input .hint {
+  display: block;
+  margin-top: 5px;
+  color: grey;
+}

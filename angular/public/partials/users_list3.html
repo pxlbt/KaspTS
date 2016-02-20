@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-3" ng-repeat="(group, users_list) in users">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        {{group}}
+      </div>
+      <div class="panel-body">
+
+        <div class="thumbnail" ng-repeat="user in users_list">
+          <div class="caption">
+            <h3>{{user.name}}</h3>
+            <p>{{user.company}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

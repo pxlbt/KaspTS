@@ -1,0 +1,15 @@
+html
+  head
+    title
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    script(src='js/main.js')
+    style(type='text/css').
+      * {
+      padding: 0;
+      margin: 0;
+      }
+  body(ng-app="app")
+    .container-fluid
+      .row
+        .col-md-12
+          div(ng-view='')
